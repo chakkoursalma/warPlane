@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#plane {
+    height: 18%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.obstacle {
+    position: absolute;
+    z-index: 1;
+    background-image: url('images/plane.jpg'); /* Add your image here */
+    background-size: cover; /* Ensure the image covers the whole element */
+    background-position: center; /* Center the image */
+    border-radius: 50%; /* Optional: keeps it circular */
+    width: 85px;
+    height: 90px;
+}
+
+
+
+.bullet {
+    background-image: url('images/rocket.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-repeat: no-repeat; /* Prevents tiling */
+    position: absolute;
+    z-index: 1;
+    width: 46px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.bomb {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('images/bomb.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire element */
+    border-radius: 50%;
+    z-index: 2;
+}
+.dollar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('images/dollar.jpg'); /* Replace with the path to your image */
+    background-size: cover; 
+    z-index: 2;
+}
+.ally{
+    position: absolute;
+    z-index: 1;
+    background-image: url('images/ally.jpg'); /* Add your image here */
+    background-size: cover; /* Ensure the image covers the whole element */
+    background-position: center; /* Center the image */
+    border-radius: 50%; /* Optional: keeps it circular */
+    width: 85px;
+    height: 90px;
+}
+/* Style for chrono display */
+.chrono-container {
+    position: fixed;
+    top: 10px;
+    right: 148px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+#chrono-time {
+    margin: 0;
+}
+
+/* Style for score board */
+.score-board {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+

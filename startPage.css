@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("images/91bU24ALpaL.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f0f0f0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Sparkle Animation */
+@keyframes sparkle {
+  0% {
+    opacity: 0.3;
+    transform: translateY(0) scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.5);
+  }
+}
+
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  animation: sparkle 5s infinite;
+  pointer-events: none;
+}
+
+/* Container Styling */
+.start-page {
+  text-align: center;
+  background: rgba(
+    10,
+    25,
+    47,
+    0.8
+  ); /* Dark navy background with transparency */
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.start-page h1 {
+  font-size: 3.5em;
+  margin-bottom: 15px;
+  color: #ffd700; /* Gold color for emphasis */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.start-page p {
+  font-size: 1.3em;
+  margin-bottom: 35px;
+  color: #dcdcdc;
+}
+
+.start-page button {
+  background-color: #ff4500; /* Orange-Red button color */
+  color: #fff;
+  border: 2px solid #ff6347; /* Slightly lighter red border */
+  padding: 12px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Bounce Animation for Start Button */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+#startButton {
+  animation: bounce 2s infinite;
+}
+
+.start-page button:hover {
+  background-color: #ff6347;
+  border-color: #ff4500;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 69, 0, 0.6);
+}
+
+.start-page button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}

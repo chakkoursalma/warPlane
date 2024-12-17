@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Icon Gallery</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div id="gallery-page" class="gallery-page">
+        <div class="gallery">
+            <div class="icon-card">
+                <img src="images/image.jpg" alt="Plane Icon" class="icon">
+                <p class="description">The plane you control in the game.</p>
+            </div>
+            <div class="icon-card">
+                <img src="images/plane.jpg" alt="Obstacle Icon" class="icon">
+                <p class="description">Obstacles to avoid during the game.</p>
+            </div>
+            <div class="icon-card">
+                <img src="images/bomb.jpg" alt="Bomb Icon" class="icon">
+                <p class="description">Bombs end the game when hit.</p>
+            </div>
+            <div class="icon-card">
+                <img src="images/dollar.jpg" alt="Dollar Icon" class="icon">
+                <p class="description">Collect dollars to increase your score.</p>
+            </div>
+            <div class="icon-card">
+                <img src="images/ally.jpg" alt="Ally Plane Icon" class="icon">
+                <p class="description">Ally planes that assist you.</p>
+            </div>
+            <div class="icon-card">
+                <img src="images/rocket.jpg" alt="Rocket Icon" class="icon">
+                <p class="description">The rocket destroys all obstacles on the screen when activated.</p>
+            </div>
+            
+        </div>
+        <div class="button-container">
+            <a href="index.html"><button id="startButton">Start the Game</button></a>
+        </div>
+    </div>
+
+    <div id="game-page" class="game-page" style="display: none;">
+        <div class="banner">
+            <video id="background-video" autoplay muted loop>
+                <source src="images/another-video.mp4" type="video/mp4">
+            </video>
+            <div class="container">
+                <img id="plane" src="images/image.jpg" alt="Plane">
+            </div>
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+</html>
